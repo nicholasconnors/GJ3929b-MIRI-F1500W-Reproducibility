@@ -33,7 +33,7 @@ uncal_path = #'/home/nconnors/Research/GJ3929b_analysis/GJ_3929b_Observations'
 Put in the absolute path to your crds cache (required to run Eureak! to process Stage 1 and 2).
 Put in the absolute path to your GJ_3929b_Observations folder.
 
-Now create a conda environment with python 3.12 and install Erebus version 0.8.1.
+Now create a conda environment with python 3.12 and install Erebus version 0.8.1 and Eureka! version 1.3. There is also a broken dependency for setuptools so manually ensure an older version is installed (<82).
 
 ```
 conda create --name erebus_env
@@ -41,6 +41,7 @@ conda activate erebus_env
 conda install python=3.12
 pip install erebus-exoplanet==0.8.1
 python -m pip install "eureka-bang[jwst] @ git+https://github.com/kevin218/Eureka.git@v1.3"
+pip install "setuptools<82"
 ```
 
 Then simply call `python run_gj3929b.py` to run the analysis.
