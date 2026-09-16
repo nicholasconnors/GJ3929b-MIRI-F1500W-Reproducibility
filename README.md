@@ -40,10 +40,9 @@ conda create --name erebus_env
 conda activate erebus_env
 conda install python=3.12
 pip install erebus-exoplanet==0.8.1
+python -m pip install "eureka-bang[jwst] @ git+https://github.com/kevin218/Eureka.git@v1.3"
 ```
 
-Also install Eureka! following the instructions [here](https://eurekadocs.readthedocs.io/en/stable/installation.html). The exact version used in the Kaggle submission is v1.2.2.
-
-Now simply call `python run_gj3929b.py`.
+Then simply call `python run_gj3929b.py` to run the analysis.
 
 # TODO: Show how to get posterior distributions for results.
