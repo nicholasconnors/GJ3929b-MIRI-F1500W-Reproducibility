@@ -33,13 +33,13 @@ uncal_path = #'/home/nconnors/Research/GJ3929b_analysis/GJ_3929b_Observations'
 Put in the absolute path to your crds cache (required to run Eureak! to process Stage 1 and 2).
 Put in the absolute path to your GJ_3929b_Observations folder.
 
-Now create a conda environment with python 3.12 and install Erebus version 8.1.
+Now create a conda environment with python 3.12 and install Erebus version 0.8.1.
 
 ```
 conda create --name erebus_env
 conda activate erebus_env
 conda install python=3.12
-pip install erebus-exoplanet==8.1
+pip install erebus-exoplanet==0.8.1
 ```
 
 Also install Eureka! following the instructions [here](https://eurekadocs.readthedocs.io/en/stable/installation.html). The exact version used in the Kaggle submission is v1.2.2.
