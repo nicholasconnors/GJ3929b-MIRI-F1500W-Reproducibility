@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/nicholasconnors/erebus/refs/heads/main/src/erebus/schema/planet_schema.json
+
+name: GJ3929b
+t0: [2460452.8997, 0.0012]  # Xue et al
+p: [2.6162644, 0.0000026]   # Xue et al
+rp_rstar: [0.0318]  # Xue et al
+a_rstar: [17.05]      # Xue et al
+inc: [89.3]            # Xue et al
+ecc: [0]
+w: [0]

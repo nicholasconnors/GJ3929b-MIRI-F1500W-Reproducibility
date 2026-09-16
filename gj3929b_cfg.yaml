@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/nicholasconnors/erebus/refs/heads/dev/src/erebus/schema/run_cfg_schema.json
+
+fit_linear: true
+fit_fnpca: true
+perform_individual_fits: false
+perform_joint_fit: true
+joint_fit_bin_size: 4
+calints_path: None
+planet_path: ./gj3929b_planet.yaml
+aperture_radius: 5
+annulus_start: 12
+annulus_end: 20
+trim_integrations: [500, 10]
+star_position: [69, 61]
+prevent_negative_eclipse_depth: true
+fix_eclipse_timing: true
+fit_uniform_eclipse_timing_offset: [-0.0625, 0.02083]
