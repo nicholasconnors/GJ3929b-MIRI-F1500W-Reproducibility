@@ -220,7 +220,7 @@ if __name__ == "__main__":
 
     jf_str = "joint" if cfg.perform_joint_fit else "individual"
     sys_str = "fnpca" if cfg.fit_fnpca else "linear"
-    folder_name = f"./output_final_{{NAME}}_{cfg.aperture_size}_{sys_str}_{jf_str}_{{DATE}}/"
+    folder_name = f"./output_final_{{NAME}}_{cfg.aperture_radius}_{sys_str}_{jf_str}_{{DATE}}/"
     
     erebus._Erebus__setup_fits()
 
