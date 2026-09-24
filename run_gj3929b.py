@@ -1,7 +1,6 @@
 # SET THESE PARAMETERS
 crds_path = #'/home/nconnors/crds_cache'
-uncal_path = #/home/nconnors/Research/GJ3929b_combined/
-
+uncal_path = #'/home/nconnors/Research/GJ3929b_analysis/GJ_3929b_Observations'
 
 import os
 
@@ -219,7 +218,7 @@ if __name__ == "__main__":
     
     print(f"CUTOFF: {cutoff} {state.visit4_cutoff_index_binned}")
 
-    jf_str = "joint" if cfg.joint_fit else "individual"
+    jf_str = "joint" if cfg.perform_joint_fit else "individual"
     sys_str = "fnpca" if cfg.fit_fnpca else "linear"
     folder_name = f"./output_final_{{NAME}}_{cfg.aperture_size}_{sys_str}_{jf_str}_{{DATE}}/"
     
