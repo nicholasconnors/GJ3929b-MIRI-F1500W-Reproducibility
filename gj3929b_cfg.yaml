@@ -11,7 +11,6 @@ aperture_radius: 5
 annulus_start: 12
 annulus_end: 20
 trim_integrations: [500, 10]
-star_position: [69, 61]
 prevent_negative_eclipse_depth: true
 fix_eclipse_timing: true
 fit_uniform_eclipse_timing_offset: [-0.0625, 0.02083]
