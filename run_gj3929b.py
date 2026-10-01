@@ -8,10 +8,11 @@ import os
 os.environ['CRDS_PATH'] = crds_path
 os.environ['CRDS_SERVER_URL']= "https://jwst-crds.stsci.edu"
 
-os.environ['CRDS_CONTEXT'] = 'jwst-latest'
-
-
-print("CRDS server at", os.environ['CRDS_SERVER_URL'])
+# The original analysis used the latest CRDS context at the time, which is now deprecated
+# To accurately reproduce the data as it was made in the paper we must use the old context
+os.environ['CRDS_CONTEXT'] = 'jwst_1364.pmap'
+os.environ["CRDS_ALLOW_BAD_REFERENCES"] = "1"
+os.environ["CRDS_ALLOW_BAD_RULES"] = "1"
 
 import sys
 import numpy as np
