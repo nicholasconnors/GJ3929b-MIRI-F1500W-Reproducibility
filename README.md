@@ -46,4 +46,4 @@ pip install "setuptools<82"
 
 Then simply call `python run_gj3929b.py` to run the analysis.
 
-# TODO: Show how to get posterior distributions for results.
+After it is finished running it will output `full_chain.npy` from which you can make the posterior distributions.
