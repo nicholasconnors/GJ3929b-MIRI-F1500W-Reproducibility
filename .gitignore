@@ -216,7 +216,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
-full_chain.npy
 /Erebus_Output
-lc_GJ3929b.h5
-posterior_GJ3929b.txt
+./lc_GJ3929b.h5
+./posterior_GJ3929b.txt
+Submission/full_chain.npy
