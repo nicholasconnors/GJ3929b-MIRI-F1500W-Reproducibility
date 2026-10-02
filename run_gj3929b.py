@@ -219,13 +219,11 @@ if __name__ == "__main__":
     
     print(f"CUTOFF: {cutoff} {state.visit4_cutoff_index_binned}")
 
-    jf_str = "joint" if cfg.perform_joint_fit else "individual"
-    sys_str = "fnpca" if cfg.fit_fnpca else "linear"
-    folder_name = f"./output_final_{{NAME}}_{cfg.aperture_radius}_{sys_str}_{jf_str}_{{DATE}}/"
+    folder_name = f"./Erebus_Output/"
     
     erebus._Erebus__setup_fits()
 
     erebus.run(force_clear_cache = True, output_folder=folder_name)
     
-    np.save("./full_chain.npy", erebus.joint_fit.mcmc.full_chain)
+    np.save("./Erebus_Output/full_chain.npy", erebus.joint_fit.mcmc.full_chain)
     
